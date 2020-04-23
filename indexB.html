@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
+    <title>BMI</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>BMI</h1>
+
+        <p>
+            This WebApp calculates the Body Mass Index. <br>
+            To view the Portuguese version, visit the <a href="index.html">IMC</a> page.
+        </p>
+        <div class="input">            
+            Weight: <input type="tel" value="lb" size="1" name="weight"
+                onclick="this.select()"><br>
+            Feet: <input type="tel" value="ft" size="1" name="feet"
+                onclick="this.select()"><br>
+            Inches: <input type="tel" value="in" size="1" name="inches"
+                onclick="this.select()"><br>
+            <input  style="font-weight: bold; background-color: aqua; color: black; padding:.5rem" type="button"
+                value="Calculate" onclick="calcE()"><br>
+            BMI: <input style="font-family:Lakki Reddy;" type="tel" size="1" name="bmi" onclick="this.select()"><br>
+        </div>
+
+        <div class="tabela">
+            <table border="3">
+                <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                </tr>
+                <tr>
+                    <td>Below 18</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18-24.9</td>
+                    <td>Healthy</td>
+                </tr>
+                <tr>
+                    <td>25-29.9</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>30-39.9</td>
+                    <td>Obese</td>
+                </tr>
+                <tr>
+                    <td>40 and above</td>
+                    <td>Extremely Obese</td>
+                </tr>
+
+            </table>
+        </div>
+        <p>For more information about BMI, visit the <a href="aboutB.html">Info</a> page.</p>
+    </div>
+
+    <div class="bola" style="margin-bottom: 3rem;"></div>
+
+    <footer class="footer">
+        &copy; 2019 - BMI Calculator
+        <br>
+        designed and developed by <a href="https://jcgsr.github.io/" class="badge badge-primary">Jovane Rocha</a>.
+    </footer>
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

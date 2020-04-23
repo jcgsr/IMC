@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap');
+
+*, *::before, *::after { box-sizing: border-box;}
+
+body{
+    /*8background-color: rgb(8, 8, 104);8*/
+    background: linear-gradient(35deg, blue, rgb(65, 34, 34), blue);
+    color: white;
+    text-align: center;
+    font-family: 'Lakki Reddy', cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    width: 100%;
+    margin: 0 auto;
+}
+
+table{
+  font-size: 1.5rem;
+}
+
+h1{
+    text-shadow: 2px 2px 3px rgb(215, 230, 13);
+    padding: 1rem;
+}
+a:hover{
+    color: lightslategray;
+    
+}a:link{
+    text-decoration: none;
+    color: aqua;
+    
+}
+a:visited{
+    color: yellow;
+}
+
+th{
+  color: yellow;
+  padding: 1rem;
+}
+
+td{
+  padding: .5rem;
+}
+
+.tabela{
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.bola {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+.footer{    
+  background-color: rgb(113, 126, 109);
+  color: brown;
+  border-radius: .5rem;  
+  border-style: solid;
+  border-color: rgb(44, 75, 75); 
+  text-align: center;
+  margin: 0% auto; 
+  font-size: smaller;
+  padding: 1rem;
+}
+.container{
+    width: 100%;
+    padding: 1rem;
+}
+.container-info{
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+
+.contato{
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-size: 3rem;  
+}
+
+.effect:hover{
+  color: yellow;
+  opacity: .75;
+  transition: color 1000ms linear;
+}
+
+.vegan{
+  padding: 1rem;
+  font-size: 4rem;
+}
+
+.vegan img{
+  width: 3rem;
+}
+
+.container-info img{
+  width: 80%;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 40%;
+  margin: 0 auto;
+}
+.input input{
+  text-align: center;
+  color: gray;
+}
+
+@keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 50px;
+      bottom: 50px;
+      width: 50px;
+      height: 20px;
+    }
+    100% {
+      top: 0px;
+      
+    }
+  }
