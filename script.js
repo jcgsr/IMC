@@ -47,3 +47,17 @@ function calcE() {
         alert("You are extremely obese!!")
     }
 }
+
+caixasInput = $("input");
+function pressKey(ev){
+   if(ev.keyCode == 13){
+      caixaAtual = caixasInput.index(this);
+      if(caixasInput[caixaAtual+1] != null)
+          caixasInput[caixaAtual+1].focus();
+     ev.preventDefault();
+return false; 
+  }
+  return true;
+}
+
+$("input").keypress(pressKey);
